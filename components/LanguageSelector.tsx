@@ -17,25 +17,29 @@ const LanguageSelector = () => {
 				<Listbox.Button className='w-full px-3 py-1 mb-1 border border-gray-300 rounded-md cursor-pointer'>
 					{router.locale === 'fr' ? 'Français' : 'English'}
 				</Listbox.Button>
-				<Listbox.Options className='w-full border border-gray-300 rounded-md cursor-pointer'>
+				<Listbox.Options className='w-full py-1 border border-gray-300 rounded-md cursor-pointer'>
 					<Listbox.Option
 						value='en'
-						className={({ active }) =>
-							`${active ? 'bg-blue-50' : 'text-gray-900'}
-                              select-none pl-7 py-1`
+						className={({ active, selected }) =>
+							`${
+								active
+									? 'bg-blue-50 text-primaryblue'
+									: 'text-gray-900'
+							} ${selected ? 'font-bold' : 'font-normal'}
+                              select-none text-center py-1`
 						}
 					>
 						English
 					</Listbox.Option>
 					<Listbox.Option
 						value='fr'
-						className={({ active }) =>
+						className={({ active, selected }) =>
 							`${
 								active
-									? 'text-blue bg-blue-100'
+									? 'bg-blue-50 text-primaryblue'
 									: 'text-gray-900'
-							}
-                          select-none`
+							} ${selected ? 'font-bold' : 'font-normal'}
+                          select-none text-center py-1`
 						}
 					>
 						Français
