@@ -1,1 +1,8 @@
-{ "test": "Ceci est un test" }
+{
+	"hero-title": "Bonjour !",
+	"hero-content": "Je suis Yoann, un développeur front-end concentré sur la construction de magnifiques interfaces & expériences",
+	"hero-button": "Contactez-moi !",
+	"skills-title": "Compétences",
+	"featured-projects": "Projets mis en avant",
+	"form-name": "Nom"
+}
