@@ -4,6 +4,9 @@ import LanguageSelector from '../components/LanguageSelector';
 import { Trans, useTranslation } from 'next-i18next';
 import skills from '../public/data/skills';
 import Form from '../components/Form';
+import Image from 'next/image';
+import projects from '../public/data/projects';
+import Project from '../components/Project';
 
 export default function Home() {
 	const { t } = useTranslation('common');
@@ -30,14 +33,48 @@ export default function Home() {
 			</header>
 			<section className='section'>
 				<h1 className='section-title'>{t('skills-title')}</h1>
-				<ul className='col-span-2 skills-list'>
-					{skills.map((skill, index) => (
-						<li key={index}>{skill}</li>
-					))}
-				</ul>
+				<div className='section-content'>
+					<ul className='col-span-2 skills-list'>
+						{skills.map((skill, index) => (
+							<li key={index}>{skill}</li>
+						))}
+					</ul>
+				</div>
 			</section>
 			<section className='section'>
 				<h1 className='section-title'>{t('featured-projects')}</h1>
+				<div className='section-content'>
+					<ul>
+						<li>
+							<a href='#'>Kasa</a>
+							<p>
+								A web appliation built with React for my web
+								development course. Kasa is an apartment
+							</p>
+							<Image
+								src='/../public/images/kasa.png'
+								alt='Kasa homepage'
+								height={400}
+								width={400}
+								className='object-cover'
+							/>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section className='section'>
+				<h1 className='section-title'>Projects</h1>
+				<div className='section-content'>
+					<ul>
+						{projects.map((project) => (
+							<Project
+								title={project.title}
+								description={project.description}
+								tags={project.tags}
+							/>
+						))}
+					</ul>
+				</div>
 			</section>
 			<Form name={t('form-name')} />
 		</div>

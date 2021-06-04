@@ -30,10 +30,13 @@
 @tailwind utilities;
 
 .section {
-	@apply flex flex-col py-12 px-9;
+	@apply flex flex-col w-full py-12 px-9;
 }
 .section-title {
-	@apply font-bold uppercase text-primaryblue;
+	@apply font-bold tracking-widest uppercase text-primaryblue;
+}
+.section-content {
+	@apply py-7 pl-7;
 }
 .skills-list {
 	column-count: 2;
