@@ -18,6 +18,7 @@ export default function Home() {
 				<title>Yoann Agésilas</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
+
 			<LanguageSelector />
 
 			<header className='h-screen mt-20 px-11 sm:mt-52'>
@@ -31,6 +32,7 @@ export default function Home() {
 					{t('hero-button')}
 				</button>
 			</header>
+
 			<section className='section'>
 				<h1 className='section-title'>{t('skills-title')}</h1>
 				<div className='section-content'>
@@ -41,6 +43,7 @@ export default function Home() {
 					</ul>
 				</div>
 			</section>
+
 			<section className='section'>
 				<h1 className='section-title'>{t('featured-projects')}</h1>
 				<div className='section-content'>
@@ -62,6 +65,7 @@ export default function Home() {
 					</ul>
 				</div>
 			</section>
+
 			<section className='section'>
 				<h1 className='section-title'>Projects</h1>
 				<div className='section-content'>
@@ -77,6 +81,7 @@ export default function Home() {
 					</ul>
 				</div>
 			</section>
+
 			<Form name={t('form-name')} />
 		</div>
 	);

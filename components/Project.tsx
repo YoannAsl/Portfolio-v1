@@ -6,11 +6,11 @@ interface Props {
 
 const Project = ({ title, description, tags }: Props) => {
 	return (
-		<li>
+		<li className='mb-3'>
 			<h1 className='font-bold'>
 				<a href='#'>{title}</a>
 			</h1>
-			<p className='text-sm'>{description}</p>
+			<p className='mb-1 text-sm'>{description}</p>
 			<ul className='flex flex-wrap'>
 				{tags.map((tag, index) => (
 					<li

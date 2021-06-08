@@ -41,3 +41,6 @@
 .skills-list {
 	column-count: 2;
 }
+.form-input {
+	@apply px-2 py-1 mb-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-primaryblue focus:border-transparent;
+}
