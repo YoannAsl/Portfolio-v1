@@ -12,8 +12,11 @@ const Project = ({ title, description, tags }: Props) => {
 			</h1>
 			<p className='text-sm'>{description}</p>
 			<ul className='flex flex-wrap'>
-				{tags.map((tag) => (
-					<li className='py-[2px] px-1 mr-1 mb-1 border rounded-sm text-primaryblue border-primaryblue text-xs font-medium'>
+				{tags.map((tag, index) => (
+					<li
+						key={index}
+						className='py-[2px] px-1 mr-1 mb-1 border rounded-sm text-primaryblue border-primaryblue text-xs font-medium'
+					>
 						{tag}
 					</li>
 				))}

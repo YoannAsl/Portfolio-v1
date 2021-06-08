@@ -66,8 +66,9 @@ export default function Home() {
 				<h1 className='section-title'>Projects</h1>
 				<div className='section-content'>
 					<ul>
-						{projects.map((project) => (
+						{projects.map((project, index) => (
 							<Project
+								key={index}
 								title={project.title}
 								description={project.description}
 								tags={project.tags}
