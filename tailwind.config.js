@@ -11,6 +11,9 @@ module.exports = {
 	darkMode: false, // or 'media' or 'class'
 	theme: {
 		extend: {
+			backgroundImage: (theme) => ({
+				arrow: `url('/public/images/arrow.png')`,
+			}),
 			fontFamily: { sans: ['Montserrat'] },
 			colors: {
 				primaryblue: '#007bff',

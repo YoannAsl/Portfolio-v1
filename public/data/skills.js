@@ -1,8 +1,8 @@
 export default [
-	'JavaScript (ES6)',
-	'TypeScript',
 	'React',
 	'Redux',
+	'TypeScript',
+	'JavaScript (ES6)',
 	'Next.js',
 	'HTML',
 	'CSS / Sass',
