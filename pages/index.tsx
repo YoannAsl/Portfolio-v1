@@ -1,14 +1,16 @@
 import Head from 'next/head';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import LanguageSelector from '../components/LanguageSelector';
-import { Trans, useTranslation } from 'next-i18next';
-import skills from '../public/data/skills';
-import Form from '../components/Form';
 import Image from 'next/image';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { Trans, useTranslation } from 'next-i18next';
+
+import skills from '../public/data/skills';
 import projects from '../public/data/projects';
+import LanguageSelector from '../components/LanguageSelector';
+import Form from '../components/Form';
 import Project from '../components/Project';
 
-export default function Home() {
+export default function Home({ _nextI18Next }: any) {
+	const locale = _nextI18Next.initialLocale;
 	const { t } = useTranslation('common');
 	// const name = 'Yoann';
 
@@ -70,14 +72,23 @@ export default function Home() {
 				<h1 className='section-title'>Projects</h1>
 				<div className='section-content'>
 					<ul>
-						{projects.map((project, index) => (
-							<Project
-								key={index}
-								title={project.title}
-								description={project.description}
-								tags={project.tags}
-							/>
-						))}
+						{projects.map((project, index) =>
+							locale == 'en' ? (
+								<Project
+									key={index}
+									title={project.title}
+									description={project.description.en}
+									tags={project.tags}
+								/>
+							) : (
+								<Project
+									key={index}
+									title={project.title}
+									description={project.description.fr}
+									tags={project.tags}
+								/>
+							)
+						)}
 					</ul>
 				</div>
 			</section>
