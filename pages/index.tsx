@@ -21,7 +21,7 @@ export default function Home({ _nextI18Next }: any) {
 	// const name = 'Yoann';
 
 	return (
-		<div className='flex flex-col min-h-screen text-gray-700'>
+		<div className='text-gray-700'>
 			<Head>
 				{locale == 'en' ? (
 					<title>Yoann Agésilas | Front-End Developer</title>
@@ -33,14 +33,14 @@ export default function Home({ _nextI18Next }: any) {
 
 			<LanguageSelector />
 
-			<header className='h-screen pt-20 font-light px-11 sm:py-52 sm:px-24'>
-				<h1 className='mb-20 text-3xl leading-snug xl:text-4xl'>
+			<header className='flex flex-col justify-around max-w-[1440px] h-screen py-20 font-light px-11 sm:py-32 sm:px-24 mx-auto'>
+				<h1 className='mb-20 text-3xl lg:text-4xl'>
 					{t('hero-title')} 👋
 				</h1>
-				<p className='max-w-2xl mb-16 text-3xl leading-snug xl:text-4xl'>
+				<h2 className='max-w-2xl mb-16 text-3xl leading-snug lg:text-4xl lg:leading-normal'>
 					{t('hero-content')}
-				</p>
-				<button className='px-3 py-2 text-xl text-white bg-blue-500 rounded-md'>
+				</h2>
+				<button className='px-3 py-2 text-xl text-white bg-blue-500 rounded-md max-w-min whitespace-nowrap'>
 					{t('hero-button')}
 				</button>
 			</header>
@@ -67,7 +67,7 @@ export default function Home({ _nextI18Next }: any) {
 								development course. Kasa is an apartment
 							</p>
 							<Image
-								src='/../public/images/kasa.png'
+								src='/images/kasa.png'
 								alt='Kasa homepage'
 								height={400}
 								width={400}

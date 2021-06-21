@@ -25,13 +25,13 @@
 @tailwind utilities;
 
 .section {
-	@apply flex flex-col w-full py-12 px-9;
+	@apply block w-full py-12 sm:flex sm:justify-center px-9 lg:p-24 xl:px-24 xl:py-40;
 }
 .section-title {
-	@apply font-bold tracking-widest uppercase text-primaryblue;
+	@apply flex-shrink-0 w-auto font-bold tracking-widest text-left uppercase sm:text-right sm:w-48 text-primaryblue sm:mr-12;
 }
 .section-content {
-	@apply font-light py-7 pl-7;
+	@apply w-full max-w-2xl font-light py-7 pl-7 sm:p-0;
 }
 .skills-list {
 	column-count: 2;

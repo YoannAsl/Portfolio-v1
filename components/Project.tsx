@@ -35,7 +35,7 @@ const Project = ({ title, description, tags }: Props) => {
 				{tags.map((tag, index) => (
 					<li
 						key={index}
-						className='py-[2px] px-1 mr-1 mb-1 border rounded-sm text-primaryblue border-primaryblue text-xs font-bold'
+						className='py-[2px] px-1 mr-1 mb-1 border rounded-sm text-primaryblue border-primaryblue text-xs font-bold font-mono'
 					>
 						{tag}
 					</li>
