@@ -1,27 +1,22 @@
 @font-face {
-	font-family: 'Montserrat';
-	src: url('/fonts/Montserrat/Montserrat-Light.ttf');
+	font-family: 'Apercu';
+	src: url('/fonts/Apercu/Apercu-Light.ttf');
 	font-weight: 300;
 }
 @font-face {
-	font-family: 'Montserrat';
-	src: url('/fonts/Montserrat/Montserrat-Regular.ttf');
+	font-family: 'Apercu';
+	src: url('/fonts/Apercu/Apercu-Regular.ttf');
 	font-style: normal;
 	font-weight: normal;
 }
 @font-face {
-	font-family: 'Montserrat';
-	src: url('/fonts/Montserrat/Montserrat-Medium.ttf');
+	font-family: 'Apercu';
+	src: url('/fonts/Apercu/Apercu-Medium.ttf');
 	font-weight: 500;
 }
 @font-face {
-	font-family: 'Montserrat';
-	src: url('/fonts/Montserrat/Montserrat-SemiBold.ttf');
-	font-weight: 600;
-}
-@font-face {
-	font-family: 'Montserrat';
-	src: url('/fonts/Montserrat/Montserrat-Bold.ttf');
+	font-family: 'Apercu';
+	src: url('/fonts/Apercu/Apercu-Bold.ttf');
 	font-weight: 700;
 }
 
@@ -36,7 +31,7 @@
 	@apply font-bold tracking-widest uppercase text-primaryblue;
 }
 .section-content {
-	@apply py-7 pl-7;
+	@apply font-light py-7 pl-7;
 }
 .skills-list {
 	column-count: 2;

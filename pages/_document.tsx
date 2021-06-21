@@ -18,19 +18,19 @@ class MyDocument extends Document {
 			<Html>
 				<Head>
 					<link
-						href='/fonts/Montserrat/Montserrat-Regular.ttf'
+						href='/fonts/Apercu/Apercu-Regular.ttf'
 						rel='stylesheet'
 					/>
 					<link
-						href='/fonts/Montserrat/Montserrat-Medium.ttf'
+						href='/fonts/Apercu/Apercu-Medium.ttf'
 						rel='stylesheet'
 					/>
 					<link
-						href='/fonts/Montserrat/Montserrat-Bold.ttf'
+						href='/fonts/Apercu/Apercu-Bold.ttf'
 						rel='stylesheet'
 					/>
 					<link
-						href='/fonts/Montserrat/Montserrat-SemiBold.ttf'
+						href='/fonts/Apercu/Apercu-Light.ttf'
 						rel='stylesheet'
 					/>
 				</Head>

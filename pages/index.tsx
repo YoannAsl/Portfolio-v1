@@ -9,25 +9,35 @@ import LanguageSelector from '../components/LanguageSelector';
 import Form from '../components/Form';
 import Project from '../components/Project';
 
+export const getStaticProps = async ({ locale }: { locale: string }) => ({
+	props: {
+		...(await serverSideTranslations(locale, ['common'])),
+	},
+});
+
 export default function Home({ _nextI18Next }: any) {
 	const locale = _nextI18Next.initialLocale;
 	const { t } = useTranslation('common');
 	// const name = 'Yoann';
 
 	return (
-		<div className='flex flex-col items-center min-h-screen text-gray-700'>
+		<div className='flex flex-col min-h-screen text-gray-700'>
 			<Head>
-				<title>Yoann Agésilas</title>
+				{locale == 'en' ? (
+					<title>Yoann Agésilas | Front-End Developer</title>
+				) : (
+					<title>Yoann Agésilas | Développeur Front-End</title>
+				)}
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
 
 			<LanguageSelector />
 
-			<header className='h-screen mt-20 px-11 sm:mt-52'>
+			<header className='h-screen pt-20 font-light px-11 sm:py-52 sm:px-24'>
 				<h1 className='mb-20 text-3xl leading-snug xl:text-4xl'>
-					{t('hero-title')}
+					{t('hero-title')} 👋
 				</h1>
-				<p className='mb-16 text-3xl leading-snug xl:text-4xl'>
+				<p className='max-w-2xl mb-16 text-3xl leading-snug xl:text-4xl'>
 					{t('hero-content')}
 				</p>
 				<button className='px-3 py-2 text-xl text-white bg-blue-500 rounded-md'>
@@ -38,7 +48,7 @@ export default function Home({ _nextI18Next }: any) {
 			<section className='section'>
 				<h1 className='section-title'>{t('skills-title')}</h1>
 				<div className='section-content'>
-					<ul className='col-span-2 skills-list'>
+					<ul className='col-span-2 text-[.9rem] skills-list'>
 						{skills.map((skill, index) => (
 							<li key={index}>{skill}</li>
 						))}
@@ -52,7 +62,7 @@ export default function Home({ _nextI18Next }: any) {
 					<ul>
 						<li>
 							<a href='#'>Kasa</a>
-							<p>
+							<p className='text-sm'>
 								A web appliation built with React for my web
 								development course. Kasa is an apartment
 							</p>
@@ -97,9 +107,3 @@ export default function Home({ _nextI18Next }: any) {
 		</div>
 	);
 }
-
-export const getStaticProps = async ({ locale }: { locale: string }) => ({
-	props: {
-		...(await serverSideTranslations(locale, ['common'])),
-	},
-});

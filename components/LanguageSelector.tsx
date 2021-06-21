@@ -12,7 +12,7 @@ const LanguageSelector = () => {
 	}
 
 	return (
-		<div className='w-28'>
+		<div className='absolute w-28 top-3 right-5 sm:top-7 sm:right-8'>
 			<Listbox value={router.locale} onChange={handleChange}>
 				<Listbox.Button className='w-full px-3 py-1 mb-1 border border-gray-300 rounded-md cursor-pointer'>
 					{router.locale === 'fr' ? 'Français' : 'English'}
