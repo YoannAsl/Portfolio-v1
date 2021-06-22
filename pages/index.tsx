@@ -103,7 +103,7 @@ export default function Home({ _nextI18Next }: any) {
 				</div>
 			</section>
 
-			<Form name={t('form-name')} />
+			<Form name={t('form-name')} send={t('form-send')} />
 		</div>
 	);
 }

@@ -1,8 +1,9 @@
 interface Props {
 	name: string;
+	send: string;
 }
 
-const Form = ({ name }: Props) => {
+const Form = ({ name, send }: Props) => {
 	return (
 		<form
 			name='contact'
@@ -23,7 +24,7 @@ const Form = ({ name }: Props) => {
 				type='submit'
 				className='self-center px-5 py-1 text-xl text-white rounded-md bg-primaryblue'
 			>
-				Send
+				{send}
 			</button>
 		</form>
 	);
