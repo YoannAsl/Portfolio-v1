@@ -50,7 +50,9 @@ export default function Home({ _nextI18Next }: any) {
 				<div className='section-content'>
 					<ul className='col-span-2 text-[.9rem] skills-list'>
 						{skills.map((skill, index) => (
-							<li key={index}>{skill}</li>
+							<li key={index} className='mb-1'>
+								{skill}
+							</li>
 						))}
 					</ul>
 				</div>
@@ -103,7 +105,7 @@ export default function Home({ _nextI18Next }: any) {
 				</div>
 			</section>
 
-			<Form name={t('form-name')} send={t('form-send')} />
+			<Form name={t('form-name')} sendButtonContent={t('form-send')} />
 		</div>
 	);
 }
