@@ -9,7 +9,7 @@ const Form = ({ name, sendButtonContent }: Props) => {
 			name='contact'
 			// method='POST'
 			// data-netlify='true'
-			className='flex flex-col w-full mb-40 px-9 max-w-[500px] mx-auto'
+			className='flex flex-col w-full mb-40 px-9 max-w-[600px] mx-auto'
 		>
 			<label htmlFor='name'>{name}</label>
 			<input type='text' name='name' className='form-input' />

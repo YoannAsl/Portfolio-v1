@@ -62,12 +62,7 @@ export default function Home({ _nextI18Next }: any) {
 				<h1 className='section-title'>{t('featured-projects')}</h1>
 				<div className='section-content'>
 					<ul>
-						<li>
-							<a href='#'>Kasa</a>
-							<p className='text-sm'>
-								A web appliation built with React for my web
-								development course. Kasa is an apartment
-							</p>
+						<li className='flex flex-col ml-[-5%]'>
 							<Image
 								src='/images/kasa.png'
 								alt='Kasa homepage'
@@ -75,6 +70,11 @@ export default function Home({ _nextI18Next }: any) {
 								width={400}
 								className='object-cover'
 							/>
+							<a href='#'>Kasa</a>
+							<p className='text-sm'>
+								A web appliation built with React for my web
+								development course. Kasa is an apartment
+							</p>
 						</li>
 					</ul>
 				</div>
