@@ -40,7 +40,7 @@ export default function Home({ _nextI18Next }: any) {
 				<h2 className='max-w-2xl mb-16 text-3xl leading-snug lg:text-4xl lg:leading-normal'>
 					{t('hero-content')}
 				</h2>
-				<button className='px-3 py-2 text-xl text-white bg-blue-500 rounded-md max-w-min whitespace-nowrap'>
+				<button className='px-3 py-2 text-xl text-white bg-blue-500 rounded-md max-w-min whitespace-nowrap lg:text-2xl lg:px-4'>
 					{t('hero-button')}
 				</button>
 			</header>

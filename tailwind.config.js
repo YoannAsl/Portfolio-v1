@@ -11,6 +11,9 @@ module.exports = {
 	darkMode: false, // or 'media' or 'class'
 	theme: {
 		extend: {
+			// animation:{
+			//     'fadeIn': ''
+			// }
 			backgroundImage: (theme) => ({
 				arrow: `url('/public/images/arrow.png')`,
 			}),
