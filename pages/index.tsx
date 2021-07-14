@@ -105,7 +105,10 @@ export default function Home({ _nextI18Next }: any) {
 				</div>
 			</section>
 
-			<Form name={t('form-name')} sendButtonContent={t('form-send')} />
+			<Form
+				name={t('form-name')}
+				submitButtonContent={t('form-submit')}
+			/>
 		</div>
 	);
 }

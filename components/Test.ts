@@ -8,9 +8,12 @@ const Test = (ref: any) => {
 
 	useEffect(() => {
 		observer.observe(ref.current);
-	});
+		return () => {
+			observer.disconnect();
+		};
+	}, []);
 
-	return <div></div>;
+	return isIntersecting;
 };
 
 export default Test;
