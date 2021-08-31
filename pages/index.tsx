@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
@@ -18,7 +19,12 @@ export const getStaticProps = async ({ locale }: { locale: string }) => ({
 export default function Home({ _nextI18Next }: any) {
 	const locale = _nextI18Next.initialLocale;
 	const { t } = useTranslation('common');
+	const formRef = useRef<HTMLFormElement>(null);
 	// const name = 'Yoann';
+
+	const handleButtonClick = () => {
+		formRef.current.scrollIntoView({ behavior: 'smooth' });
+	};
 
 	return (
 		<div className='text-gray-700'>
@@ -40,7 +46,10 @@ export default function Home({ _nextI18Next }: any) {
 				<h2 className='max-w-2xl mb-16 text-3xl leading-snug lg:text-4xl lg:leading-normal'>
 					{t('hero-content')}
 				</h2>
-				<button className='px-3 py-2 text-xl text-white bg-blue-500 rounded-md max-w-min whitespace-nowrap lg:text-2xl lg:px-4'>
+				<button
+					className='px-3 py-2 text-xl text-white bg-blue-500 rounded-md max-w-min whitespace-nowrap lg:text-2xl lg:px-4'
+					onClick={handleButtonClick}
+				>
 					{t('hero-button')}
 				</button>
 			</header>
@@ -108,6 +117,7 @@ export default function Home({ _nextI18Next }: any) {
 			<Form
 				name={t('form-name')}
 				submitButtonContent={t('form-submit')}
+				formRef={formRef}
 			/>
 		</div>
 	);

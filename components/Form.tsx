@@ -1,13 +1,13 @@
 import { useState } from 'react';
-import { useForm, ValidationError } from '@formspree/react';
 import axios from 'axios';
 
 interface Props {
 	name: string;
 	submitButtonContent: string;
+	formRef: HTMLFormElement;
 }
 
-const Form = ({ name, submitButtonContent }: Props) => {
+const Form = ({ name, submitButtonContent, formRef }: Props) => {
 	const [inputs, setInputs] = useState({
 		name: '',
 		email: '',
@@ -15,7 +15,6 @@ const Form = ({ name, submitButtonContent }: Props) => {
 	});
 
 	const handleOnChange = (e) => {
-		e.persist();
 		setInputs((prev) => ({
 			...prev,
 			[e.target.name]: e.target.value,
@@ -26,6 +25,7 @@ const Form = ({ name, submitButtonContent }: Props) => {
 		e.preventDefault();
 		try {
 			await axios.post('https://formspree.io/f/mnqlbvpo', inputs);
+			setInputs({ name: '', email: '', message: '' });
 		} catch (error) {
 			console.error(error);
 		}
@@ -36,6 +36,7 @@ const Form = ({ name, submitButtonContent }: Props) => {
 			name='contact-form'
 			className='flex flex-col w-full mb-40 px-9 max-w-[600px] mx-auto'
 			onSubmit={handleSubmit}
+			ref={formRef}
 		>
 			<label htmlFor='name'>{name}</label>
 			<input
