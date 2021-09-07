@@ -34,7 +34,7 @@ const Form = ({ name, submitButtonContent, formRef }: Props) => {
 	return (
 		<form
 			name='contact-form'
-			className='flex flex-col w-full mb-40 px-9 max-w-[600px] mx-auto'
+			className='flex flex-col w-full mb-72 px-9 max-w-[600px] mx-auto'
 			onSubmit={handleSubmit}
 			ref={formRef}
 		>

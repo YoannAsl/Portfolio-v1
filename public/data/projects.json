@@ -1,0 +1,66 @@
+[
+	{
+		"title": "Kasa",
+		"description": { "en": "kasa", "fr": "kasa" },
+		"tags": ["React", "JavaScript", "Sass"]
+	},
+	{
+		"title": "Book Scraper",
+		"description": {
+			"en": "Web scraper I created using Python and BeautifulSoup.",
+			"fr": "Web scraper que j'ai cree en utilisant Python et BeautifulSoup."
+		},
+		"tags": ["Python", "BeautifulSoup"]
+	},
+	{
+		"title": "Alternative GitHub Profile",
+		"description": { "en": "", "fr": "" },
+		"tags": ["React", "TypeScript", "Chart.js", "styled-components"]
+	},
+	{
+		"title": "Argent Bank",
+		"description": {
+			"en": "I made the front end of a banking web application with React, Redux and TypeScript. The backend uses MongoDB, Node.js and Express.",
+			"fr": "J'ai cree le front-end d'une application web bancaire avec React, Redux et TypeScript. Le backend utilise MongoDB, Node.js et Express."
+		},
+		"tags": [
+			"React",
+			"Redux",
+			"TypeScript",
+			"Axios",
+			"Sass",
+			"MongoDB",
+			"Node.js",
+			"Express"
+		]
+	},
+	{
+		"title": "Portfolio",
+		"description": {
+			"en": "First version of my portfolio.",
+			"fr": "Premiere version de mon portfolio."
+		},
+		"tags": ["Next.js", "TypeScript", "i18next", "Tailwind"]
+	},
+	{
+		"title": "FishEye",
+		"description": { "en": "fisheye en", "fr": "fisheye fr" },
+		"tags": ["JavaScript", "HTML", "CSS"]
+	},
+	{
+		"title": "HRnet",
+		"description": {
+			"en": "Migrated a jQuery web application to React.",
+			"fr": "Migration d'une application jQuery vers React."
+		},
+		"tags": ["React", "JavaScript", "styled-components"]
+	},
+	{
+		"title": "React modal",
+		"description": {
+			"en": "A basic React library I made to learn how to create and publish a npm package.",
+			"fr": "React modal description fr"
+		},
+		"tags": ["React", "JavaScript", "Storybook", "Rollup"]
+	}
+]

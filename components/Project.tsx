@@ -9,9 +9,9 @@ const Project = ({ title, description, tags }: Props) => {
 		<li className='mb-10'>
 			<a
 				href='#'
-				className='flex font-bold group w-min whitespace-nowrap'
+				className='mb-2 flex font-bold group w-min whitespace-nowrap'
 			>
-				<h1 className='mb-2 mr-2 transition-all duration-200 ease-out group-hover:mr-5'>
+				<h1 className='mr-2 transition-all duration-200 ease-out group-hover:mr-5'>
 					{title}
 				</h1>
 				<svg

@@ -4,8 +4,8 @@ import Image from 'next/image';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { Trans, useTranslation } from 'next-i18next';
 
-import skills from '../public/data/skills';
-import projects from '../public/data/projects';
+import skills from '../public/data/skills.json';
+import projects from '../public/data/projects.json';
 import LanguageSelector from '../components/LanguageSelector';
 import Form from '../components/Form';
 import Project from '../components/Project';
@@ -67,7 +67,7 @@ export default function Home({ _nextI18Next }: any) {
 				</div>
 			</section>
 
-			<section className='section'>
+			{/* <section className='section'>
 				<h1 className='section-title'>{t('featured-projects')}</h1>
 				<div className='section-content'>
 					<ul>
@@ -87,7 +87,7 @@ export default function Home({ _nextI18Next }: any) {
 						</li>
 					</ul>
 				</div>
-			</section>
+			</section> */}
 
 			<section className='section'>
 				<h1 className='section-title'>Projects</h1>
