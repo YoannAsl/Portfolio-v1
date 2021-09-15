@@ -1,15 +1,23 @@
 [
     {
-        "title": "Kanban Board Maker",
+        "title": "Kanban Board Maker (WIP)",
         "description": {
             "en": "A Trello-like application I made using React, TypeScript and react-beautiful-dnd.",
             "fr": "Une application Trello-like qui utilise React, TypeScript et react-beautiful-dnd."
         },
-        "tags": ["React", "TypeScript", "react-beautiful-dnd"]
+        "tags": [
+            "React",
+            "TypeScript",
+            "react-beautiful-dnd",
+            "styled-components"
+        ]
     },
     {
         "title": "Kasa",
-        "description": { "en": "kasa", "fr": "kasa" },
+        "description": {
+            "en": "Kasa is an application for appartment renting.",
+            "fr": "Kasa est une application de location d'appartements."
+        },
         "tags": ["React", "JavaScript", "Sass"]
     },
     {
@@ -21,7 +29,7 @@
         "tags": ["Python", "Beautiful Soup"]
     },
     {
-        "title": "Alternative GitHub Profile",
+        "title": "Alternative GitHub Profile (WIP)",
         "description": {
             "en": "An alternative look for GitHub profiles, with charts.",
             "fr": "Une vue alternative pour les profils GitHub, avec des graphiques."
@@ -55,8 +63,19 @@
     },
     {
         "title": "FishEye",
-        "description": { "en": "fisheye en", "fr": "fisheye fr" },
+        "description": {
+            "en": "Fisheye is a website that allows independents photographers to present their best work.",
+            "fr": "FishEye est un site web qui permet aux photographes indépendants de présenter leurs meilleurs travaux."
+        },
         "tags": ["JavaScript", "HTML", "CSS"]
+    },
+    {
+        "title": "SportSee",
+        "description": {
+            "en": "SportSee is an application for monitoring your physical activity.",
+            "fr": "SportSee est une application qui permet de suivre votre activité physique."
+        },
+        "tags": ["React", "Recharts", "styled-components"]
     },
     {
         "title": "HRnet",
