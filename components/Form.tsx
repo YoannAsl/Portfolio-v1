@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 
 interface Props {
@@ -14,14 +14,18 @@ const Form = ({ name, submitButtonContent, formRef }: Props) => {
         message: '',
     });
 
-    const handleOnChange = (e) => {
+    const handleOnChange = (
+        e:
+            | React.FormEvent<HTMLInputElement>
+            | React.FormEvent<HTMLTextAreaElement>
+    ) => {
         setInputs((prev) => ({
             ...prev,
-            [e.target.name]: e.target.value,
+            [e.currentTarget.name]: e.currentTarget.value,
         }));
     };
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e: React.SyntheticEvent) => {
         e.preventDefault();
         try {
             await axios.post('https://formspree.io/f/mnqlbvpo', inputs);
@@ -59,7 +63,7 @@ const Form = ({ name, submitButtonContent, formRef }: Props) => {
             <label htmlFor='message'>Message</label>
             <textarea
                 name='message'
-                className='form-input'
+                className='form-input-area'
                 onChange={handleOnChange}
                 value={inputs.message}
             />

@@ -19,7 +19,7 @@ export const getStaticProps = async ({ locale }: { locale: string }) => ({
 export default function Home({ _nextI18Next }: any) {
     const locale = _nextI18Next.initialLocale;
     const { t } = useTranslation('common');
-    const formRef = useRef<HTMLFormElement>(null);
+    const formRef = useRef<HTMLFormElement>(null!);
     // const name = 'Yoann';
 
     const handleButtonClick = () => {

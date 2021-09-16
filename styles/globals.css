@@ -1,23 +1,23 @@
 @font-face {
-	font-family: 'Apercu';
-	src: url('/fonts/Apercu/Apercu-Light.ttf');
-	font-weight: 300;
+    font-family: 'Apercu';
+    src: url('/fonts/Apercu/Apercu-Light.ttf');
+    font-weight: 300;
 }
 @font-face {
-	font-family: 'Apercu';
-	src: url('/fonts/Apercu/Apercu-Regular.ttf');
-	font-style: normal;
-	font-weight: normal;
+    font-family: 'Apercu';
+    src: url('/fonts/Apercu/Apercu-Regular.ttf');
+    font-style: normal;
+    font-weight: normal;
 }
 @font-face {
-	font-family: 'Apercu';
-	src: url('/fonts/Apercu/Apercu-Medium.ttf');
-	font-weight: 500;
+    font-family: 'Apercu';
+    src: url('/fonts/Apercu/Apercu-Medium.ttf');
+    font-weight: 500;
 }
 @font-face {
-	font-family: 'Apercu';
-	src: url('/fonts/Apercu/Apercu-Bold.ttf');
-	font-weight: 700;
+    font-family: 'Apercu';
+    src: url('/fonts/Apercu/Apercu-Bold.ttf');
+    font-weight: 700;
 }
 
 @tailwind base;
@@ -25,17 +25,20 @@
 @tailwind utilities;
 
 .section {
-	@apply block w-full py-12 sm:flex sm:justify-center px-9 lg:p-24 xl:px-24 xl:py-40;
+    @apply block w-full py-12 sm:flex sm:justify-center px-9 lg:p-24 xl:px-24 xl:py-40;
 }
 .section-title {
-	@apply flex-shrink-0 w-auto font-bold tracking-widest text-left uppercase sm:text-right sm:w-48 text-primaryblue sm:mr-12;
+    @apply flex-shrink-0 w-auto font-bold tracking-widest text-left uppercase sm:text-right sm:w-48 text-primaryblue sm:mr-12;
 }
 .section-content {
-	@apply w-full max-w-2xl font-light py-7 pl-7 sm:p-0;
+    @apply w-full max-w-2xl font-light py-7 pl-7 sm:p-0;
 }
 .skills-list {
-	column-count: 2;
+    column-count: 2;
 }
 .form-input {
-	@apply px-2 py-1 mb-4 border rounded-md focus:outline-none focus:ring-2 focus:ring-primaryblue focus:border-transparent md:h-10 md:py-2 md:px-3;
+    @apply px-2 py-1 mb-4 border rounded-md focus:outline-none focus:ring-2 focus:ring-primaryblue focus:border-transparent md:h-10 md:py-2 md:px-3;
+}
+.form-input-area {
+    @apply px-2 py-1 mb-4 border rounded-md focus:outline-none focus:ring-2 focus:ring-primaryblue focus:border-transparent md:h-20 md:py-2 md:px-3;
 }
