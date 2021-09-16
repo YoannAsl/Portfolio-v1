@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { LegacyRef, useState } from 'react';
 import axios from 'axios';
 
 interface Props {
     name: string;
     submitButtonContent: string;
-    formRef: HTMLFormElement;
+    formRef: LegacyRef<HTMLFormElement>;
 }
 
 const Form = ({ name, submitButtonContent, formRef }: Props) => {
