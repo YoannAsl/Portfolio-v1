@@ -13,6 +13,20 @@
         ]
     },
     {
+        "title": "Alternative GitHub Profile (WIP)",
+        "description": {
+            "en": "An alternative look for your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories and sort your top repos by number of stars, forks and size.",
+            "fr": "Une vue alternative pour votre profil GitHub. Comprend des visualisation de données de vos languages les plus utilisés et repositories les plus étoilés. Vous pouvez trier vos repositories selon la taille, le nombre d'étoiles et de forks."
+        },
+        "tags": [
+            "React",
+            "TypeScript",
+            "Chart.js",
+            "GitHub API",
+            "styled-components"
+        ]
+    },
+    {
         "title": "Kasa",
         "description": {
             "en": "Kasa is an application for appartment renting.",
@@ -28,14 +42,7 @@
         },
         "tags": ["Python", "Beautiful Soup"]
     },
-    {
-        "title": "Alternative GitHub Profile (WIP)",
-        "description": {
-            "en": "An alternative look for GitHub profiles, with charts.",
-            "fr": "Une vue alternative pour les profils GitHub, avec des graphiques."
-        },
-        "tags": ["React", "TypeScript", "Chart.js", "styled-components"]
-    },
+
     {
         "title": "Argent Bank",
         "description": {
