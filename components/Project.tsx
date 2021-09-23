@@ -2,7 +2,7 @@ interface Props {
     title: string;
     description: string;
     tags: string[];
-    url?: string;
+    url: string;
 }
 
 const Project = ({ title, description, tags, url }: Props) => {
@@ -11,6 +11,8 @@ const Project = ({ title, description, tags, url }: Props) => {
             <a
                 href={url}
                 className='mb-2 flex font-bold group w-min whitespace-nowrap'
+                target='_blank'
+                rel='noreferrer noopener'
             >
                 <h1 className='mr-2 transition-all duration-200 ease-out group-hover:mr-5'>
                     {title}

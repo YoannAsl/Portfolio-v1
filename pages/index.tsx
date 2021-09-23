@@ -100,6 +100,7 @@ export default function Home({ _nextI18Next }: any) {
                                     title={project.title}
                                     description={project.description.en}
                                     tags={project.tags}
+                                    url={project.url}
                                 />
                             ) : (
                                 <Project
@@ -107,6 +108,7 @@ export default function Home({ _nextI18Next }: any) {
                                     title={project.title}
                                     description={project.description.fr}
                                     tags={project.tags}
+                                    url={project.url}
                                 />
                             )
                         )}

@@ -1,6 +1,7 @@
 [
     {
         "title": "Kanban Board Maker (WIP)",
+        "url": "https://github.com/YoannAsl/Kanban-Board-Maker",
         "description": {
             "en": "A Trello-like application I made using React, TypeScript and react-beautiful-dnd.",
             "fr": "Une application Trello-like qui utilise React, TypeScript et react-beautiful-dnd."
@@ -14,6 +15,7 @@
     },
     {
         "title": "Alternative GitHub Profile (WIP)",
+        "url": "https://github.com/YoannAsl/github-profile",
         "description": {
             "en": "An alternative look for your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories and sort your top repos by number of stars, forks and size.",
             "fr": "Une vue alternative pour votre profil GitHub. Comprend des visualisation de données de vos languages les plus utilisés et repositories les plus étoilés. Vous pouvez trier vos repositories selon la taille, le nombre d'étoiles et de forks."
@@ -28,6 +30,7 @@
     },
     {
         "title": "Kasa",
+        "url": "https://github.com/YoannAsl/Kasa",
         "description": {
             "en": "Kasa is an application for appartment renting.",
             "fr": "Kasa est une application de location d'appartements."
@@ -36,6 +39,7 @@
     },
     {
         "title": "Book Scraper",
+        "url": "https://github.com/YoannAsl/BookScraper",
         "description": {
             "en": "Simple web scraper I made to learn the basics of Python.",
             "fr": "Simple web scraper que j'ai fait afin d'apprendre les bases de Python."
@@ -45,6 +49,7 @@
 
     {
         "title": "Argent Bank",
+        "url": "https://github.com/YoannAsl/Argent-Bank-v2",
         "description": {
             "en": "I made the front end of a banking web application with React, Redux and TypeScript. The backend uses MongoDB, Node.js and Express.",
             "fr": "J'ai créé le front-end d'une application web bancaire avec React, Redux et TypeScript. Le backend utilise MongoDB, Node.js et Express."
@@ -62,6 +67,7 @@
     },
     {
         "title": "Portfolio",
+        "url": "https://github.com/YoannAsl/Portfolio-v1",
         "description": {
             "en": "First version of my portfolio, made using Next.js and TypeScript.",
             "fr": "Première version de mon portfolio qui utilise Next.js et TypeScript."
@@ -70,6 +76,7 @@
     },
     {
         "title": "FishEye",
+        "url": "https://github.com/YoannAsl/FishEye",
         "description": {
             "en": "Fisheye is a website that allows independents photographers to present their best work.",
             "fr": "FishEye est un site web qui permet aux photographes indépendants de présenter leurs meilleurs travaux."
@@ -78,6 +85,7 @@
     },
     {
         "title": "SportSee",
+        "url": "https://github.com/YoannAsl/SportSee",
         "description": {
             "en": "SportSee is an application for monitoring your physical activity.",
             "fr": "SportSee est une application qui permet de suivre votre activité physique."
@@ -86,6 +94,7 @@
     },
     {
         "title": "HRnet",
+        "url": "https://github.com/YoannAsl/HRnet",
         "description": {
             "en": "Migrated a jQuery web application to React.",
             "fr": "Migration d'une application jQuery vers React."
@@ -94,6 +103,7 @@
     },
     {
         "title": "React modal",
+        "url": "https://github.com/YoannAsl/basic-react-modal",
         "description": {
             "en": "A basic React library I made to learn how to create and publish a npm package.",
             "fr": "Une librairie React basique que j'ai réalisée afin d'apprendre comment créer et publier un package npm."
