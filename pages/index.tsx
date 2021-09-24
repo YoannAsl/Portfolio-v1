@@ -9,6 +9,7 @@ import projects from '../public/data/projects.json';
 import LanguageSelector from '../components/LanguageSelector';
 import Form from '../components/Form';
 import Project from '../components/Project';
+import Footer from '../components/Footer';
 
 export const getStaticProps = async ({ locale }: { locale: string }) => ({
     props: {
@@ -121,6 +122,8 @@ export default function Home({ _nextI18Next }: any) {
                 submitButtonContent={t('form-submit')}
                 formRef={formRef}
             />
+
+            <Footer />
         </div>
     );
 }
