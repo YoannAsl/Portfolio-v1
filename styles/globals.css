@@ -42,3 +42,6 @@
 .form-input-area {
     @apply px-2 py-1 mb-4 border rounded-md focus:outline-none focus:ring-2 focus:ring-primaryblue focus:border-transparent md:h-20 md:py-2 md:px-3;
 }
+.social-link {
+    @apply w-6 h-6 mx-2;
+}
