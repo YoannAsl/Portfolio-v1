@@ -1,5 +1,4 @@
 import React, { LegacyRef, useState } from 'react';
-import axios from 'axios';
 
 interface Props {
     name: string;
@@ -19,16 +18,16 @@ const Form = ({ name, submitButtonContent, formRef }: Props) => {
             | React.FormEvent<HTMLInputElement>
             | React.FormEvent<HTMLTextAreaElement>
     ) => {
-        setInputs((prev) => ({
-            ...prev,
-            [e.currentTarget.name]: e.currentTarget.value,
-        }));
+        setInputs({ ...inputs, [e.currentTarget.name]: e.currentTarget.value });
     };
 
     const handleSubmit = async (e: React.SyntheticEvent) => {
         e.preventDefault();
         try {
-            await axios.post('https://formspree.io/f/mnqlbvpo', inputs);
+            await fetch('https://formspree.io/f/mnqlbvpo', {
+                method: 'post',
+                body: JSON.stringify(inputs),
+            });
             setInputs({ name: '', email: '', message: '' });
         } catch (error) {
             console.error(error);
@@ -38,7 +37,7 @@ const Form = ({ name, submitButtonContent, formRef }: Props) => {
     return (
         <form
             name='contact-form'
-            className='flex flex-col w-full mb-72 px-9 max-w-[600px] mx-auto'
+            className='flex flex-col w-full mb-40 px-9 max-w-[600px] mx-auto'
             onSubmit={handleSubmit}
             ref={formRef}
         >
