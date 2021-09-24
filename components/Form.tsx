@@ -28,10 +28,10 @@ const Form = ({ name, submitButtonContent, formRef }: Props) => {
                 method: 'post',
                 body: JSON.stringify(inputs),
             });
-            setInputs({ name: '', email: '', message: '' });
         } catch (error) {
             console.error(error);
         }
+        setInputs({ name: '', email: '', message: '' });
     };
 
     return (
