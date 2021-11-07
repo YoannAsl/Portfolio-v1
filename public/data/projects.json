@@ -1,5 +1,14 @@
 [
     {
+        "title": "Tic Tac Toe",
+        "url": "https://github.com/YoannAsl/tic-tac-toe",
+        "description": {
+            "en": "Play Tic Tac Toe against an AI that uses the Minimax algorithm.",
+            "fr": "Jouez au Morpion contre une IA qui utilise l'algorithme Minimax."
+        },
+        "tags": ["React", "TypeScript", "styled-components"]
+    },
+    {
         "title": "Kanban Board Maker (WIP)",
         "url": "https://github.com/YoannAsl/Kanban-Board-Maker",
         "description": {
