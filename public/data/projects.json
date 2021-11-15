@@ -1,5 +1,14 @@
 [
     {
+        "title": "Pathfinding Algorithms Visualizer",
+        "url": "https://github.com/YoannAsl/Pathfinding-Visualizer",
+        "description": {
+            "en": "A visualization tool for pathfinding algorithms.",
+            "fr": "Un outil de visualisation pour les algorithmes de pathfinding."
+        },
+        "tags": ["React", "TypeScript"]
+    },
+    {
         "title": "Tic Tac Toe",
         "url": "https://github.com/YoannAsl/tic-tac-toe",
         "description": {
@@ -7,6 +16,15 @@
             "fr": "Jouez au Morpion contre une IA qui utilise l'algorithme Minimax."
         },
         "tags": ["React", "TypeScript", "styled-components"]
+    },
+    {
+        "title": "Shiny Agency",
+        "url": "https://github.com/YoannAsl/shiny-agency",
+        "description": {
+            "en": "A visualization tool for pathfinding algorithms.",
+            "fr": "Un outil de visualisation pour les algorithmes de pathfinding."
+        },
+        "tags": ["React", "TypeScript", "Jest", "Testing-Library"]
     },
     {
         "title": "Kanban Board Maker (WIP)",
@@ -23,7 +41,7 @@
         ]
     },
     {
-        "title": "Alternative GitHub Profile (WIP)",
+        "title": "Alternative GitHub Profile",
         "url": "https://github.com/YoannAsl/github-profile",
         "description": {
             "en": "An alternative look for your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories and sort your top repos by number of stars, forks and size.",
