@@ -1,7 +1,7 @@
 [
     {
         "title": "Pathfinding Algorithms Visualizer",
-        "url": "https://github.com/YoannAsl/Pathfinding-Visualizer",
+        "url": "https://pathfinding-visualizer.yoannagesilas.com/",
         "description": {
             "en": "A visualization tool for pathfinding algorithms.",
             "fr": "Un outil de visualisation pour les algorithmes de pathfinding."
@@ -10,7 +10,7 @@
     },
     {
         "title": "Tic Tac Toe",
-        "url": "https://github.com/YoannAsl/tic-tac-toe",
+        "url": "https://tic-tac-toe.yoannagesilas.com/",
         "description": {
             "en": "Play Tic Tac Toe against an AI that uses the Minimax algorithm.",
             "fr": "Jouez au Morpion contre une IA qui utilise l'algorithme Minimax."
@@ -28,7 +28,7 @@
     },
     {
         "title": "Kanban Board Maker (WIP)",
-        "url": "https://github.com/YoannAsl/Kanban-Board-Maker",
+        "url": "https://kanbanmaker.yoannagesilas.com/",
         "description": {
             "en": "A Trello-like application I made using React, TypeScript and react-beautiful-dnd.",
             "fr": "Une application Trello-like qui utilise React, TypeScript et react-beautiful-dnd."
@@ -42,7 +42,7 @@
     },
     {
         "title": "Alternative GitHub Profile",
-        "url": "https://github.com/YoannAsl/github-profile",
+        "url": "https://githubprofile.yoannagesilas.com/",
         "description": {
             "en": "An alternative look for your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories and sort your top repos by number of stars, forks and size.",
             "fr": "Une vue alternative pour votre profil GitHub. Comprend des visualisation de données de vos languages les plus utilisés et repositories les plus étoilés. Vous pouvez trier vos repositories selon la taille, le nombre d'étoiles et de forks."
@@ -94,7 +94,7 @@
     },
     {
         "title": "Portfolio",
-        "url": "https://github.com/YoannAsl/Portfolio-v1",
+        "url": "https://www.yoannagesilas.com/",
         "description": {
             "en": "First version of my portfolio, made using Next.js and TypeScript.",
             "fr": "Première version de mon portfolio qui utilise Next.js et TypeScript."
