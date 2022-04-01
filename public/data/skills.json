@@ -2,13 +2,13 @@
     "React",
     "Redux",
     "TypeScript",
-    "JavaScript (ES6)",
+    "JavaScript (ES6+)",
     "Jest",
+    "Cypress",
     "Testing Library",
     "Next.js",
     "HTML",
     "CSS / Sass",
-    "Python",
     "Git & Github",
     "Figma"
 ]

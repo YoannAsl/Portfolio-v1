@@ -21,8 +21,8 @@
         "title": "Shiny Agency",
         "url": "https://github.com/YoannAsl/shiny-agency",
         "description": {
-            "en": "A visualization tool for pathfinding algorithms.",
-            "fr": "Un outil de visualisation pour les algorithmes de pathfinding."
+            "en": "Front end of an IT freelancers agency website I made to learn more about the Context API.",
+            "fr": "Front end du site d'une agence de freelancers IT que j'ai fait afin d'en apprendre plus sur l'API Context."
         },
         "tags": ["React", "TypeScript", "Jest", "Testing-Library"]
     },
